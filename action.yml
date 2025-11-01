@@ -1,6 +1,6 @@
 # action.yaml
 name: 'SharePoint Mirror Sync'
-description: 'Sync a whole repo, specific extensions, or files to a Sharepoint site using glob patterns and recrusive directory crawling with a client ID and secret'
+description: 'Sync a whole repo, specific extensions, or files to a Sharepoint site using glob patterns with a client ID and secret'
 branding:
   icon: 'upload-cloud'
   color: 'blue'
@@ -108,4 +108,5 @@ runs:
     - ${{ inputs.debug }}
 
     - ${{ inputs.debug_metadata }}
+
 
