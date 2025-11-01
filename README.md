@@ -3,7 +3,7 @@
 
   # SharePoint Mirror Sync Github Action
 
-  > 🚀 Automatically sync files from GitHub to SharePoint with intelligent change detection and Markdown-to-HTML conversion
+  > 🚀 Automatically sync whole repos, specific files, or file types from GitHub to SharePoint with intelligent change detection, mirror syncing, and Markdown-to-HTML conversion
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Version](https://img.shields.io/badge/Version-1.0.0-blue)](https://github.com/AunalyticsManagedServices/sharepoint-file-upload-action)
