@@ -1,9 +1,17 @@
-# SharePoint File Upload GitHub Action
+<div align="center">
+  <img src="logo/logo.png" alt="SharePoint File Upload Action Logo" width="300">
 
-> 🚀 Automatically sync files from GitHub to SharePoint with intelligent change detection and Markdown-to-HTML conversion
+  # SharePoint File Upload GitHub Action
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-5.1.0-blue)](https://github.com/AunalyticsManagedServices/sharepoint-file-upload-action)
+  > 🚀 Automatically sync files from GitHub to SharePoint with intelligent change detection and Markdown-to-HTML conversion
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Version](https://img.shields.io/badge/Version-1.0.0-blue)](https://github.com/AunalyticsManagedServices/sharepoint-file-upload-action)
+
+  [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
+  [![Microsoft Graph](https://img.shields.io/badge/Microsoft_Graph-0078D4?logo=microsoft&logoColor=white)](https://learn.microsoft.com/en-us/graph/)
+  [![SharePoint](https://img.shields.io/badge/SharePoint-0078D4?logo=microsoft-sharepoint&logoColor=white)](https://www.microsoft.com/en-us/microsoft-365/sharepoint/)
+</div>
 
 ## 📋 Quick Navigation
 

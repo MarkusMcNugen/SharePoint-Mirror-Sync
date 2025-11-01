@@ -1,6 +1,9 @@
 # action.yaml
 name: 'Sync to SharePoint'
 description: 'Upload one or more files in a directory to Sharepoint site using client ID and secret'
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
 inputs:
   file_path:
     description: 'Source file path (glob ok)'
