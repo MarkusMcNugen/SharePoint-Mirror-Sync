@@ -93,7 +93,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Sync to SharePoint
-        uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+        uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
         with:
           file_path: "**/*"
           host_name: "yourcompany.sharepoint.com"
@@ -530,7 +530,7 @@ exclude_patterns: "*.tmp,*.bak,.DS_Store,Thumbs.db,.git"
   uses: actions/checkout@v4
 
 - name: Sync All Files
-  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     file_path: "**/*"
     file_path_recursive_match: true
@@ -552,7 +552,7 @@ exclude_patterns: "*.tmp,*.bak,.DS_Store,Thumbs.db,.git"
   uses: actions/checkout@v4
 
 - name: Sync Documentation
-  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     file_path: "**/*.md"
     file_path_recursive_match: true
@@ -575,7 +575,7 @@ exclude_patterns: "*.tmp,*.bak,.DS_Store,Thumbs.db,.git"
   uses: actions/checkout@v4
 
 - name: Sync Clean Repository
-  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     file_path: "**/*"
     file_path_recursive_match: true
@@ -598,7 +598,7 @@ exclude_patterns: "*.tmp,*.bak,.DS_Store,Thumbs.db,.git"
   uses: actions/checkout@v4
 
 - name: Sync to GovCloud
-  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     file_path: "compliance/**/*"
     host_name: "agency.sharepoint.us"
@@ -621,7 +621,7 @@ exclude_patterns: "*.tmp,*.bak,.DS_Store,Thumbs.db,.git"
   uses: actions/checkout@v4
 
 - name: Full Sync with Deletion
-  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     file_path: "docs/**/*"
     file_path_recursive_match: true
@@ -738,7 +738,7 @@ jobs:
   uses: actions/checkout@v4
 
 - name: Rebuild All Markdown HTML
-  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     file_path: "**/*.md"
     file_path_recursive_match: true
@@ -831,18 +831,18 @@ Batch Metadata Updates:    Enabled (20 items/batch)
 
 ```yaml
 # Use defaults (recommended for most cases)
-- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     # ... other parameters
 
 # Adjust for high-performance environments
-- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     max_upload_workers: 8      # Increase concurrent uploads
     # ... other parameters
 
 # Conservative settings (minimize throttling risk)
-- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     max_upload_workers: 2      # Reduce concurrent requests
     # ... other parameters
@@ -1254,13 +1254,13 @@ Enable detailed logging for troubleshooting and diagnostics.
 
 ```yaml
 # General debug only (recommended for most troubleshooting)
-- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     # ... other parameters
     debug: true
 
 # Full debug mode (maximum verbosity)
-- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     # ... other parameters
     debug: true
@@ -1390,7 +1390,7 @@ If sync deletion is marking unexpected files for deletion, enable **debug mode**
 
 ```yaml
 - name: Sync with Debug Output
-  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     # ... your parameters
     sync_delete: true
@@ -1578,7 +1578,7 @@ Get-PnPAzureADAppSitePermission
 No workflow changes needed! Works identically:
 
 ```yaml
-- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+- uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     site_name: "TeamSite"  # Must match granted site
     # ... other parameters (same as before)
@@ -1703,7 +1703,7 @@ Add before upload step to inspect files:
 Enable debug logging:
 ```yaml
 - name: Upload with Debug
-  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
+  uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
   with:
     # ... parameters
     debug: true
