@@ -92,7 +92,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Upload to SharePoint
+      - name: Sync to SharePoint
         uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1
         with:
           file_path: "**/*"
